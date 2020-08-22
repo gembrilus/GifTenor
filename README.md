@@ -1,5 +1,6 @@
 # GifTenor
-The Taxi application with simple navigation
+
+Search images on tenor.com and save the favorites of them in a local store.
 
 # Download
 
