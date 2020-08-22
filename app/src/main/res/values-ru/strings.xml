@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_search_gif">Поиск Gif</string>
+    <string name="no_title">нет имени</string>
+    <string name="tab_search_name">Поиск</string>
+    <string name="tab_favorite_name">Избранное</string>
+    <string name="description_searched_gif">найденный gif</string>
+    <string name="description_favorite_gif">избранный gif</string>
+    <string name="description_gif_image">gif изображение</string>
+</resources>

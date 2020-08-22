@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_offset">8dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="big_offset">16dp</dimen>
+</resources>
