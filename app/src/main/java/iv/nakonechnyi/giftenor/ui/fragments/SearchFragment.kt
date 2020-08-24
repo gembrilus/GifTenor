@@ -2,19 +2,16 @@ package iv.nakonechnyi.giftenor.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import iv.nakonechnyi.giftenor.R
 import iv.nakonechnyi.giftenor.ui.adapters.TenerNetAdapter
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.android.synthetic.main.fragment_search.view.*
-import java.util.*
 
 class SearchFragment : PagedFragment() {
 
@@ -23,12 +20,6 @@ class SearchFragment : PagedFragment() {
     override fun getLayout() = R.layout.fragment_search
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        savedInstanceState?.let {
-            view.search_bar.setQuery(
-                it.getString(QUERY),
-                false
-            )
-        }
         setButtonVisibility(false)
     }
 
@@ -72,11 +63,6 @@ class SearchFragment : PagedFragment() {
 
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        outState.putString(QUERY, search_bar.query.toString())
-        super.onSaveInstanceState(outState)
-    }
-
     private fun setButtonVisibility(checked: Boolean) {
         btn_to_favorite.visibility = if (checked) View.VISIBLE else View.GONE
     }
@@ -87,7 +73,6 @@ class SearchFragment : PagedFragment() {
     }
 
     companion object {
-        private const val QUERY = "query"
         fun newInstance() = SearchFragment()
     }
 }
